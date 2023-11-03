@@ -1,0 +1,29 @@
+---
+import Navigation  from "../components/Navigation.astro";
+import Hamburguer from "../components/Hamburguer.astro";
+import { Image } from "astro:assets";
+import headertenis from "../images/headertenis.png";
+import phone from "../images/phone-fill.png"
+import whatsapp from "../images/logo-whatsapp.png";
+---
+
+<div>
+    <Image class="image" src={headertenis} alt="header"></Image>
+    <div class="phone-header">
+        <div phone-content>
+            <Image class="image-phone" src={phone} alt="phone" />
+            <i class="text-phone">33-100-544-76</i>
+        </div>
+        <a href="https://wa.me/34555005500/?text=tu%20texto%20personalizado" target="_blank">
+            <Image class="logo-whatsapp" src={whatsapp} alt="phone" />
+         </a>
+    </div>
+    <header class="">
+        
+        <nav class="nav-container">
+            <Hamburguer />
+            <Navigation />
+            
+        </nav>
+    </header>
+</div>

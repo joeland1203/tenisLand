@@ -1,0 +1,192 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import whatsapp from "../images/logo-whatsapp.png";
+import adidasneo from "../images/adidasneo.jpg";
+import AirForce1blanco4 from "../images/AirForce1blanco4.jpg";
+import filabota from "../images/filabota.jpg";
+import pumahibrid from "../images/pumahibrid.jpg";
+import adidas from "../images/dama/adidas.jpg";
+import AirForce1negro3 from "../images/dama/AirForce1negro3.jpg";
+import converseTrend from "../images/dama/converseTrend.jpg";
+import converseTrend2 from "../images/dama/converseTrend2.jpg";
+import fila from "../images/dama/fila.jpg";
+import filadestruptor from "../images/dama/filadestruptor.jpg";
+import guessacolchonado from "../images/dama/guessacolchonado.jpg";
+import guessKiut from "../images/dama/guessKiut.jpg";
+import louisvuitto from "../images/dama/louisvuitton.jpg";
+import NikeAirmax from "../images/dama/NikeAirmax.jpg";
+import pumablancos from "../images/dama/pumablancos.jpg";
+import reebokClasico from "../images/dama/reebokClasico.jpg";
+import stevemadden from "../images/dama/stevemadden.jpg";
+import pumacalli from "../images/dama/pumacalli.jpg";
+import filaracer from "../images/dama/filaracer.jpg";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dama</title>
+	</head>
+	<body>
+		<Header />
+		<h1>Calzado para Dama</h1>
+		<div class="todos-productos">
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={adidasneo}
+					alt="Adidas Neo"
+				/>
+				<h2>Adidas Neo</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={AirForce1blanco4}
+					alt="Adidas Neo"
+				/>
+				<h2>Air Force 1</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={filabota}
+					alt="Adidas Neo"
+				/>
+				<h2>Fila Bota</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={pumahibrid}
+					alt="Puma Hibrid"
+				/>
+				<h2>Puma Hibrid</h2>
+			</div>
+			<div class="productos">
+				<Image class="imagen-producto" src={adidas} alt="Adidas" />
+				<h2>Adidas</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={AirForce1negro3}
+					alt="Air Force 1 Negro"
+				/>
+				<h2>Air Force 1 Negro</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={converseTrend}
+					alt="Converse Trend"
+				/>
+				<h2>Converse Trend</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={converseTrend2}
+					alt="Converse Trend"
+				/>
+				<h2>Converse Trend</h2>
+			</div>
+			<div class="productos">
+				<Image class="imagen-producto" src={fila} alt="Fila" />
+				<h2>Fila</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={filadestruptor}
+					alt="Fila Destruptor"
+				/>
+				<h2>Fila Destruptor</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={filaracer}
+					alt="Fila Racer"
+				/>
+				<h2>Fila Racer</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={guessacolchonado}
+					alt="Guess Acolchonado"
+				/>
+				<h2>Guess Acolchonado</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={guessKiut}
+					alt="Guess Kiut"
+				/>
+				<h2>Guess Kiut</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={louisvuitto}
+					alt="Louis Vuitton"
+				/>
+				<h2>Louis Vuitton</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={NikeAirmax}
+					alt="Nike Airmax"
+				/>
+				<h2>Nike Airmax</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={pumablancos}
+					alt="Puma VMW"
+				/>
+				<h2>Puma BMW</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={pumacalli}
+					alt="Puma Calli"
+				/>
+				<h2>Puma Calli</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={reebokClasico}
+					alt="Reebok Clasico"
+				/>
+				<h2>Reebok Clasico</h2>
+			</div>
+			<div class="productos">
+				<Image
+					class="imagen-producto"
+					src={stevemadden}
+					alt="Steve Madden"
+				/>
+				<h2>Steve Madden</h2>
+			</div>
+			
+		</div>
+		
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
+	</body>
+</html>

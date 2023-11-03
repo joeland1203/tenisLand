@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import tenisland from "../images/tenisland.png";
+import phone from "../images/phone-fill.svg";
+import whatsapp from "../images/logo-whatsapp.png";
+---
+
+<footer>
+    <div class="pie">
+        <Image class="logo" src={tenisland} alt="logo tenisland" />
+        <p class="slogan">Los mejores Tenis para tus pies.</p>
+        <div phone-content>
+            <Image class="image-phone" src={phone} alt="phone" />
+            <i class="text-phone">33-100-544-76</i>
+        </div>
+
+        <div>
+            <a
+                class="whatsapp"
+                href="https://wa.me/523310054476/"
+                target="_blank"
+            >
+                <Image
+                    class="logo-whatsapp"
+                    src={whatsapp}
+                    alt="logo whatsapp"
+                />
+            </a>
+        </div>
+    </div>
+</footer>
