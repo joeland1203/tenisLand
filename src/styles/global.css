@@ -37,6 +37,12 @@ html {
   .marcas{
     padding: 15px;
   }
+
+  .marcas-index{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
   
  /* header */
 
