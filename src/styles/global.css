@@ -21,8 +21,9 @@ html {
     text-align: center;
   }
 
-  h2{
+  .text-1{
     font-size: 1rem;
+    padding: 0 5px;
   }
   
   p{
@@ -223,6 +224,10 @@ footer{
         background: rgb(87,144,221);
         background: rgb(87,144,221);
         background: linear-gradient(90deg, rgba(87,144,221,1) 0%, rgba(45,66,217,1) 65%, rgba(35,28,147,0.9810049019607843) 83%, rgba(21,21,161,1) 100%, rgba(14,65,79,1) 100%, rgba(0,212,255,1) 100%);
+      }
+
+      .text-1{
+        display: none;
       }
 
       .todos-productos {
