@@ -1,21 +1,36 @@
 ---
 import { Image } from "astro:assets";
-import tenisland from "../images/tenisland.png";
-import phone from "../images/phone-fill.svg";
-import whatsapp from "../images/whatsapp-icon.svg";
-import visa from "../images/logos/visa.png";
-import mastercard from "../images/logos/mastercard.png";
-import mercadopago from "../images/logos/mercadopago.webp";
 import "../styles/footerStyles.css";
+import whatsapp from "../images/whatsapp-icon.svg";
+import phone from "../images/phone-fill.svg";
+import mastercard from "../images/mastercard.png";
+import mercadopago from "../images/mercadopago.png";
+import visa from "../images/visa1.png";
 ---
 
-<footer class=" ">
-    <div class="logos">
-        <Image class="logo-image image1" src={visa} alt="Icono realizado por Pixel perfect" />
-        <Image class="logo-image" src={mercadopago} alt="Mercado Libre"/>
-        <Image class="logo-image" src={mastercard} alt="Master Card"/>
+<div class="footer-container">
+    <h4 class="">TENISLAND</h4>
+    <div class="line-content">
+        <div class="phone-content">
+            <Image class="" src={phone} alt="" />
+            <p>33-25-45-12-40</p>
+            
+        </div>
+        <div class="pay-content">
+            <p>Pagos con</p>
+            <Image class="image-footer" src={mastercard} alt="" />
+    
+            <Image class="image-footer" src={mercadopago} alt="" />
+            <Image class="image-footer" src={visa} alt="" />
+        </div>
+        
+            
+            <a class="whatsapp-container" href="https://wa.me/3310054476" target="_blank">
+               
+                <p>Mandanos mensaje</p>
+                <Image class="logo-whatsapp" src={whatsapp} alt="" />
+            
+            </a>
         
     </div>
-    <p class="p-footer">Copyright pagina creada por WEBLAND</p>
-    
-</footer>
+</div>

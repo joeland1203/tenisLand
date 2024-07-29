@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+   width: 60%;
+}
+
+.video {
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 3px;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.6);
+-moz-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.6);
+box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.6);
+}
+
+.sticky-menu {
+    
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    
+}
+
+
+
+.title-index {
+    
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.subtitle-index {
+    font-size: .8rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.escolar-area {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.tenis-area {
+text-align: center;
+font-size: 50px;
+margin-top: 70px;
+padding-top: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+  .video {
+    flex-direction: row;
+  }
+  .subtitle-index {
+    font-size: 1.2rem;
+  }
+  }

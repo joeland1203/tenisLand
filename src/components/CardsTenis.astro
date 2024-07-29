@@ -1,0 +1,298 @@
+---
+import { Image } from "astro:assets";
+import airmax2 from "../images/tenis/airmax2.jpg"
+import airmax1 from "../images/tenis/airmax1.jpg"
+import converse from "../images/tenis/conversebota.jpg"
+import converse2 from "../images/tenis/converse2.jpg"
+import jordan1 from "../images/tenis/jordanRetroRojo.jpg"
+import jordan2 from "../images/tenis/jordanrojos1.jpg"
+import jordanNegro1 from "../images/tenis/jordanNegro1.jpg"
+import jordanNegro2 from "../images/tenis/jordanNegro2.jpg"
+import jordan6 from "../images/tenis/jordan6-1.jpg"
+import jordan62 from "../images/tenis/jordan6-2.jpg"
+import LouisBlanco1 from "../images/tenis/louisBlanco1.jpg"
+import LouisBlanco2 from "../images/tenis/louisBlanco2.jpg"
+import louisNegro1 from "../images/tenis/louisNegro1.jpg"
+import louisNegro2 from "../images/tenis/louisNegro2.jpg"
+import nikeBlack1 from "../images/tenis/nikeBlack1.jpg"
+import nikeBlack2 from "../images/tenis/nikeBlack2.jpg"
+import pumaBlack1 from "../images/tenis/pumaBlack1.jpg"
+import pumaBlack2 from "../images/tenis/pumaBlack2.jpg"
+import pumaWhite1 from "../images/tenis/pumaWhite1.jpg"
+import pumaWhite2 from "../images/tenis/pumaWhite2.jpg"
+import tommy1 from "../images/tenis/tommy1.jpg"
+import tommy2 from "../images/tenis/tommy2.jpg"
+import af1negro1 from "../images/tenis/af1black1.jpg"
+import af1negro2 from "../images/tenis/af1black2.jpg"
+import "../styles/cardStylesIndex.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Tenis Land</title>
+    </head>
+    <div class="container">
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" src={airmax1} loading="lazy" alt="Modelo Archie" />
+
+                <h1 class="price">$499</h1>
+                <a class="btn" href="#modal1x">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal1x" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" src={airmax2} loading="lazy" alt="Modelo Archie" />
+                    <h2 class="modal-title">AIRMAX AXIS</h2>
+                    <p class="modal-p">
+                        Tallas 23 AL 26
+                    </p>
+                    <p class="modal-p">
+                        El tenis a la moda, elegantes, atrayentes y sofisticados...
+
+                    </p>
+                </div>
+            </div>
+        </card>
+
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" src={jordan6} loading="lazy" alt="Modelo Archie" />
+
+                <h1 class="price">$450</h1>
+                <a class="btn" href="#modal1A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal1A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" src={jordan62} loading="lazy" alt="Modelo Archie" />
+                    <h2 class="modal-title">JORDAN 6</h2>
+                    <p class="modal-p">
+                        Tallas 26.5 y 28
+                    </p>
+                    <p class="modal-p">
+                        El tenis a la moda, elegantes, atrayentes y sofisticados...
+
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" src={converse} loading="lazy" alt="" />
+                <h1 class="price">$450</h1>
+                <a class="btn" href="#modal2A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal2A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" src={converse2} loading="lazy" alt="Modelo Carlitos" />
+                    <h2 class="modal-title">CONVERSE BOTA</h2>
+                    <p class="modal-p">
+                        Talla 26
+                    </p>
+                    <p class="modal-p">
+                        El clasico que no pude faltar en tus pies, si no tienes unos, no estas en sintonia ...
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={jordan1} alt="" />
+                <h1 class="price">$499</h1>
+                <a class="btn" href="#modal3A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal3A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={jordan2} alt="" />
+                    <h2 class="modal-title">JORDAN RETRO</h2>
+                    <p class="modal-p">
+                       Tallas 28 y 28.5
+                    </p>
+                    <p class="modal-p">
+                        El tenis que todo mundo quiere, edicion especial bad bunny...
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={af1negro1} alt="" />
+                <h1 class="price">$499</h1>
+                <a class="btn" href="#modal4A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal4A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={af1negro2} alt="" />
+                    <h2 class="modal-title">AIR FORCE ONE</h2>
+                    <p class="modal-p">
+                        Tallas 23.5 y 24.5
+                    </p>
+                    <p class="modal-p">
+                        El tenis clasico de Nike, adecuado para cualquier momento...
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={jordanNegro1} alt="" />
+
+                <h1 class="price">$450</h1>
+                <a class="btn" href="#modal5A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal5A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={jordanNegro2} alt="" />
+                    <h2 class="modal-title">JORDAN R10</h2>
+                    <p class="modal-p">
+                       Tallas 26
+                    </p>
+                    <p class="modal-p">
+                        Moderno y elegante, sobresaldras de entre los demas...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={LouisBlanco1} alt="" />
+                <h1 class="price">$449</h1>
+                <a class="btn" href="#modal6A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal6A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={LouisBlanco2} alt="" />
+                    <h2 class="modal-title">LOUIS VUITTON</h2>
+                    <p class="modal-p">
+                        Tallas 23.5 y 25
+                    </p>
+                    <p class="modal-p">
+                       Comodidad y elegancia en tus pies...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={louisNegro1} alt="" />
+                <h1 class="price">$449</h1>
+                <a class="btn" href="#modal7A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal7A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={louisNegro2} alt="" />
+                    <h2 class="modal-title">LOUIS VUITTON</h2>
+                    <p class="modal-p">
+                       Tallas 25
+                    </p>
+                    <p class="modal-p">
+                        Comodidad y elegancia en tus pies...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={nikeBlack1} alt="" />
+                <h1 class="price">$499</h1>
+                <a class="btn" href="#modal8A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal8A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={nikeBlack2} alt="" />
+                    <h2 class="modal-title">NIKE DUNK</h2>
+                    <p class="modal-p">
+                        Tallas 27 27.5 y 29
+                    </p>
+                    <p class="modal-p">
+                        Un clasico de Nike, elegancia, estilo y comodidad que sobresalen...
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={pumaBlack1} alt="" />
+
+                <h1 class="price">$449</h1>
+                <a class="btn" href="#modal9A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal9A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={pumaBlack2} alt="" />
+                    <h2 class="modal-title">PUMA BMW</h2>
+                    <p class="modal-p">
+                        Tallas 26.5
+                    </p>
+                    <p class="modal-p">
+                        Comodidad y elegancia para tus pies...
+                    </p>
+                </div>
+            </div>
+        </card>
+
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={pumaWhite1} alt="" />
+                <h1 class="price">$449</h1>
+                <a class="btn" href="#modal10A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal10A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={pumaWhite2} alt="" />
+                    <h2 class="modal-title">PUMA CHECO</h2>
+                    <p class="modal-p">
+                       Tallas 28.5
+                    </p>
+                    <p class="modal-p">
+                        Comodidad y elegancia para tus pies...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={tommy1} alt="" />
+                <h1 class="price">$399</h1>
+                <a class="btn" href="#modal11A">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal11A" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={tommy2} alt="" />
+                    <h2 class="modal-title">TOMMY HIGHFIGHER</h2>
+                    <p class="modal-p">
+                       Tallas 25.5
+                    </p>
+                    <p class="modal-p">
+                        Elegancia en tus pies que combina con cualquer outfit
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+    </div>
+</html>

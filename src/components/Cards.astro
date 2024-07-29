@@ -1,21 +1,258 @@
 ---
-import { Image } from 'astro:assets'
-import fila from '../images/fila.jpg'
-import "../styles/styleCard.css"
+import { Image } from "astro:assets";
+import escolar1 from "../images/escolar1.jpg";
+import escolar3 from "../images/escolar3.webp";
+import abril1 from "../images/escolar/abril1.jpg"
+import abril2 from "../images/escolar/abril2.jpg"
+import carlitos1 from "../images/escolar/carlitos1.jpg"
+import carlitos2 from "../images/escolar/carlitos2.jpg"
+import isabella1 from "../images/escolar/isabella1.jpg"
+import isabella2 from "../images/escolar/isabella2.jpg"
+import mariaElena1 from "../images/escolar/mariaElena1.jpg"
+import mariaElena2 from "../images/escolar/mariaElena2.jpg"
+import archie1 from "../images/escolar/riloArchie1.jpg"
+import archie2 from "../images/escolar/riloArchie2.jpg"
+import greek1 from "../images/escolar/riloGreek.jpg"
+import greek2 from "../images/escolar/riloGreek2.jpg"
+import pati1 from "../images/escolar/riloPati1.jpg"
+import pati2 from "../images/escolar/riloPati2.jpg"
+import smog1 from "../images/escolar/smog.jpg"
+import smog2 from "../images/escolar/smog2.jpg"
+import vincent1 from "../images/escolar/vincent1.jpg"
+import vincent2 from "../images/escolar/vincent2.jpg"
+import "../styles/cardStylesIndex.css";
 ---
 
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Tenis Land</title>
+    </head>
+    <div class="container">
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" src={archie1} loading="lazy" alt="Modelo Archie" />
 
-<div class="card-container">
-    <card class="card__content">
-        <div class="card__front">
-            <Image class="image__card" src={fila} alt="" />
-            <h1 class="card__title">Fila Bota</h1>
-            <h3 class="card__subtitle">$500</h3>
-        </div>
-        <div class="card__back">
-            <h2 class="card-back__style">FILA BOTA</h2>
-            <h4 class="card-black__talla">Tallas 21-25</h4>
-            <p class="card-black__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, laborum.</p>
-        </div>
-    </card>
-</div>
+                <h1 class="price">$499</h1>
+                <a class="btn" href="#modal1">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal1" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" src={archie2} loading="lazy" alt="Modelo Archie" />
+                    <h2 class="modal-title">MODELO ARCHIE</h2>
+                    <p class="modal-p">
+                        Tallas 18 al 26
+                    </p>
+                    <p class="modal-p">
+                        Zapato escolar de la prestigiada marca rilo, elegantes, durareros y comodos.
+
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" src={carlitos1} loading="lazy" alt="" />
+                <h1 class="price">$299</h1>
+                <a class="btn" href="#modal2">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal2" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" src={carlitos2} loading="lazy" alt="Modelo Carlitos" />
+                    <h2 class="modal-title">MODELO CARLITOS</h2>
+                    <p class="modal-p">
+                        Tallas 15 al 25
+                    </p>
+                    <p class="modal-p">
+                        Calzado escolar de la mejor calidad para este regreso a clases, tu hijo mostrará prsencia y elegncia al entrar al salon
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={vincent1} alt="" />
+                <h1 class="price">$299</h1>
+                <a class="btn" href="#modal3">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal3" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={vincent2} alt="" />
+                    <h2 class="modal-title">MODELO VINCENT</h2>
+                    <p class="modal-p">
+                       Tallas 18 a la 26
+                    </p>
+                    <p class="modal-p">
+                        El calzado perfecto par a este regreso a clases, con un modelo practico
+                        para los estudiantes que no se complican la vida en colocarse su calzado.
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={abril1} alt="" />
+                <h1 class="price">$249</h1>
+                <a class="btn" href="#modal4">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal4" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={abril2} alt="" />
+                    <h2 class="modal-title">MODELO ABRIL</h2>
+                    <p class="modal-p">
+                        Tallas 18 al 21
+                    </p>
+                    <p class="modal-p">
+                        Elegancia para las peques en su regreso a clases, con un estilo
+                        muy fresco y comodo...
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={isabella1} alt="" />
+
+                <h1 class="price">$249</h1>
+                <a class="btn" href="#modal5">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal5" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={isabella2} alt="" />
+                    <h2 class="modal-title">MODELO ISABELLA</h2>
+                    <p class="modal-p">
+                       Tallas 18 al 21
+                    </p>
+                    <p class="modal-p">
+                        Elegancia para las peques en su regreso a clases, con un estilo
+                        muy fresco y comodo...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={mariaElena1} alt="" />
+                <h1 class="price">$299</h1>
+                <a class="btn" href="#modal6">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal6" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={mariaElena2} alt="" />
+                    <h2 class="modal-title">MODELO MARIA ELENA</h2>
+                    <p class="modal-p">
+                        Tallas 18 al 26
+                    </p>
+                    <p class="modal-p">
+                       Calzado moderno para las chicas que desean comodiadad y frescura
+                       para este regreso a clases...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={greek1} alt="" />
+                <h1 class="price">$449</h1>
+                <a class="btn" href="#modal7">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal7" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={greek2} alt="" />
+                    <h2 class="modal-title">MODELO GREEK</h2>
+                    <p class="modal-p">
+                       Tallas 18 al 21
+                    </p>
+                    <p class="modal-p">
+                        Elegancia en los pies y la garantia de la calidad Rilo que 
+                        dan confianza a cada paso...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={pati1} alt="" />
+                <h1 class="price">$449</h1>
+                <a class="btn" href="#modal8">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal8" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={pati2} alt="" />
+                    <h2 class="modal-title">MODELO PATY</h2>
+                    <p class="modal-p">
+                        Tallas 18 al 26
+                    </p>
+                    <p class="modal-p">
+                        Elegancia en los pies y la garantia de la calidad Rilo que 
+                        dan confianza a cada paso...
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={smog1} alt="" />
+
+                <h1 class="price">$299</h1>
+                <a class="btn" href="#modal9">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal9" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={smog2} alt="" />
+                    <h2 class="modal-title">MODELO SMOG</h2>
+                    <p class="modal-p">
+                        Tallas 22 al 26
+                    </p>
+                    <p class="modal-p">
+                        Comodidad y elegancia para este inicio de clases, donde las 
+                        pequeñas sobresaldrán entre los alumnos...
+                    </p>
+                </div>
+            </div>
+        </card>
+        
+        <card class="card-container">
+            <div class="card-front">
+                <Image class="image-card" loading="lazy" src={escolar3} alt="" />
+                <h1 class="price">$499</h1>
+                <a class="btn" href="#modal10">MOSTRAR MAS...</a>
+            </div>
+            <div id="modal10" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <Image class="image-card-modal" loading="lazy" src={escolar3} alt="" />
+                    <h2 class="modal-title">MODELO Rilo Escolar</h2>
+                    <p class="modal-p">
+                       Tallas 18 al 26
+                    </p>
+                    <p class="modal-p">
+                        Elegancia en los pies y la garantia de la calidad Rilo que 
+                        dan confianza a cada paso...
+                    </p>
+                </div>
+            </div>
+        </card>
+       
+    </div>
+</html>

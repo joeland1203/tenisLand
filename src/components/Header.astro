@@ -1,33 +1,20 @@
 ---
-import Navigation  from "../components/Navigation.astro";
-import Hamburguer from "../components/Hamburguer.astro";
 import { Image } from "astro:assets";
-import headertenis from "../images/headertenisland.png";
-import phone from "../images/phone-fill.png"
+import header from "../images/headertenisland.jpg";
+import "../styles/headerStyles.css";
 import whatsapp from "../images/whatsapp-icon.svg";
-import school from '../video/school.mp4'
 ---
 
-<div>
-    <video class="video" src={school} autoplay loop></video>
-    <div class="phone-header">
-        <div phone-content>
-            <Image class="image-phone" src={phone} alt="phone" />
-            <i class="text-phone">33-1697-9883</i>
-        </div>
-       <div class="whatsapp-header">
-        <p class="text-whatsapp">Chatea con nosotros 👉</p>
-        <a href="https://wa.me/523316979883/" target="_blank">
-            <Image class="logo-whatsapp" src={whatsapp} alt="phone" />
-         </a>
-       </div>
-    </div>
-    <header class="">
-        
-        <nav class="nav-container">
-            <Hamburguer />
-            <Navigation />
+<header>
+    <div class="header-top">
+        <Image class="image-header" src={header} alt="Cabecera" />
+       
             
-        </nav>
-    </header>
-</div>
+            <a class="anuncio" href="https://wa.me/3310054476" target="_blank">
+                <p>3310054476</p>
+                <Image class="logo-whatsapp" src={whatsapp} alt="" />
+            </a>
+       
+    </div>
+    
+</header>

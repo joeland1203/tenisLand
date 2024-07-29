@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-container {
+    
+    position: relative;
+
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.card-front a {
+    text-decoration: none;
+}
+
+.image-card {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+.price {
+    padding: .5rem;
+}
+
+.btn {
+    text-align: center;
+    background-color: #408AFC;
+    margin: .5rem;
+    padding: .3rem;
+    width: 10rem;
+    color: black;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+
+
+
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalmask:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+.resize {
+    margin: 10% auto;
+    width: 0;
+    height: 0;
+
+}
+
+.modalmask:target .resize {
+    width: 380px;
+    height: 350px;
+}
+
+.image-card-modal {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+
+.close:hover {
+    background: #FAAC58;
+    color: #222;
+}
+
+.modal-title {
+    text-align: center;
+    padding: .2rem;
+}
+
+.modal-p {
+    text-align: center;
+    padding: .2rem;
+}
+
+
+@media (min-width: 768px) {
+    .modalmask:target .resize {
+        width: 600px;
+        height: 370px;
+    }
+
+    .image-card-modal {
+       
+        
+        max-height: 250px;
+       
+    }
+  }

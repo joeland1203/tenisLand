@@ -1,56 +1,46 @@
 ---
-import PrincipalLayout from "../layouts/principalLayout.astro";
-
-import "../styles/global.css";
-import "../styles/index.css";
-
-import { Image } from "astro:assets";
-import marcas from "../images/marcas/marcas.jpg";
+import Cards from "../components/Cards.astro";
+import CardsTenis from "../components/CardsTenis.astro"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import video from "../videos/school.mp4";
+import "../styles/indexStyles.css";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.png" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Tenis Land</title>
 	</head>
 	<body>
-	<PrincipalLayout>
-		<h2 class="text-1">Selecciona el menu para ver las imagenes de los diferentes modelos a elegir...</h2>
-		<h1>Tenis Land</h1>
-		<p class="index-p">Comprar tenis deportivos no es solo adquirir un par de zapatos, es una decisión que influye en tu comodidad, rendimiento y bienestar. <br /> <br />
-			Estos tenis ofrecen:<br />
-
-			1. Comodidad inigualable: Amortiguación y soporte para reducir lesiones y fatiga.<br />
-			
-			2. Rendimiento mejorado: Diseñados para diferentes actividades.<br />
-			
-			3. Prevención de lesiones: Apoyo para pies, tobillos y rodillas.<br />
-			
-			4. Durabilidad y resistencia: Materiales de calidad que duran más.<br />
-			
-			5. Adecuación al tipo de actividad: Diseñados para deportes específicos.<br />
-			
-			6. Estilo y expresión personal: Reflejan tu estilo y personalidad.<br />
-			
-			7. Mejora en la salud general: Fomentan un estilo de vida activo y saludable.<br />
-			
-			8. Confianza en cada paso: Confianza en tu calzado se traduce en confianza en tus movimientos.<br /> <br />
-			
-			Comprar tenis deportivos adecuados es una inversión en tu salud, comodidad y rendimiento, y marca la diferencia en tu experiencia deportiva y calidad de vida.</p>
-			<div class=" ">
-				<Image
-					class="marcas-index"
-					src={marcas}
-					alt="Marcas"
-				/>
-				
+		<main id="inicio" class="main">
+			<Header />
+			<div class="menu-wrap sticky-menu">
+				<nav class="nav">
+					<a class="link-1" href="#inicio">INICIO</a>
+					<a class="link-1" href="#escolar">ESCOLAR</a>
+					<a class="link-1" href="#tenis">TENIS</a>
+				</nav>
 			</div>
-	</PrincipalLayout>	
-		<script>
-			import "../scripts/menu.js";
-		  </script>
+			
+			<div class="head">
+				<h1  class=" title-index">Tenis Land</h1>
+				<div class="video">
+					<h3 class="subtitle-index">
+						"Comodidad y estilo: El calzado escolar como herramienta
+						educativa"
+					</h3>
+					<video autoplay loop src={video}></video>
+				</div>
+			</div>
+			<h2 id="escolar" class="escolar-area">Area de Calzado Escolar</h2>
+			<Cards />
+			<h3 id="tenis" class="tenis-area">TENIS</h3>
+			<CardsTenis />
+			<Footer />
+		</main>
 	</body>
 </html>
