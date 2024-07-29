@@ -103,8 +103,8 @@
 }
 
 .modalmask:target .resize {
-    width: 380px;
-    height: 350px;
+    width: 300px;
+    height: 380px;
 }
 
 .image-card-modal {
