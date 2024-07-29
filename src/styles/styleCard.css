@@ -1,0 +1,26 @@
+
+.card__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__content {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.card__front {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.image__card {
+    
+}
+
+

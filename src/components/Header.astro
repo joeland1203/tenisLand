@@ -5,10 +5,11 @@ import { Image } from "astro:assets";
 import headertenis from "../images/headertenisland.png";
 import phone from "../images/phone-fill.png"
 import whatsapp from "../images/whatsapp-icon.svg";
+import school from '../video/school.mp4'
 ---
 
 <div>
-    <Image class="image" src={headertenis} alt="header"></Image>
+    <video class="video" src={school} autoplay loop></video>
     <div class="phone-header">
         <div phone-content>
             <Image class="image-phone" src={phone} alt="phone" />

@@ -152,25 +152,6 @@ background: linear-gradient(90deg, rgba(87,144,221,1) 0%, rgba(45,66,217,1) 65%,
     display: unset;
   }
   
-footer{
- 
-  padding: 1px 20px;
-    width: 100%;
-    height: auto;
-    
-    background-color: #303F9F;
-}
-
-.pie{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  
-  margin: 5px;
-  
-}
-
 .slogan{
   font-size: .8rem;
   color: white;
@@ -206,6 +187,17 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
+/*video*/
+
+.video {
+  width: 100%;
+}
+
+
+/*footer*/
+
+
 
   @media screen and (min-width: 576px) {
     .nav-links {

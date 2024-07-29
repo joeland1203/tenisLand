@@ -1,8 +1,9 @@
 ---
-import Header from "../components/Header.astro";
+import PrincipalLayout from "../layouts/principalLayout.astro";
+
 import "../styles/global.css";
 import "../styles/index.css";
-import Footer from "../components/Footer.astro";
+
 import { Image } from "astro:assets";
 import marcas from "../images/marcas/marcas.jpg";
 ---
@@ -16,7 +17,7 @@ import marcas from "../images/marcas/marcas.jpg";
 		<title>Tenis Land</title>
 	</head>
 	<body>
-		<Header />
+	<PrincipalLayout>
 		<h2 class="text-1">Selecciona el menu para ver las imagenes de los diferentes modelos a elegir...</h2>
 		<h1>Tenis Land</h1>
 		<p class="index-p">Comprar tenis deportivos no es solo adquirir un par de zapatos, es una decisión que influye en tu comodidad, rendimiento y bienestar. <br /> <br />
@@ -47,7 +48,7 @@ import marcas from "../images/marcas/marcas.jpg";
 				/>
 				
 			</div>
-		<Footer />
+	</PrincipalLayout>	
 		<script>
 			import "../scripts/menu.js";
 		  </script>

@@ -3,29 +3,19 @@ import { Image } from "astro:assets";
 import tenisland from "../images/tenisland.png";
 import phone from "../images/phone-fill.svg";
 import whatsapp from "../images/whatsapp-icon.svg";
+import visa from "../images/logos/visa.png";
+import mastercard from "../images/logos/mastercard.png";
+import mercadopago from "../images/logos/mercadopago.webp";
+import "../styles/footerStyles.css";
 ---
 
-<footer>
-    <div class="pie">
-        <p class="slogan">Los mejores Tenis para tus pies.</p>
-        <div phone-content>
-            <Image class="image-phone" src={phone} alt="phone" />
-            <i class="text-phone">33-1697-9883</i>
-        </div>
-
-        <div class="whatsapp-container">
-            <p class="text-whatsapp">Chatea con nosotros 👉</p>
-            <a
-                class="whatsapp"
-                href="https://wa.me/523316979883/"
-                target="_blank"
-            >
-                <Image
-                    class="logo-whatsapp"
-                    src={whatsapp}
-                    alt="logo whatsapp"
-                />
-            </a>
-        </div>
+<footer class=" ">
+    <div class="logos">
+        <Image class="logo-image image1" src={visa} alt="Icono realizado por Pixel perfect" />
+        <Image class="logo-image" src={mercadopago} alt="Mercado Libre"/>
+        <Image class="logo-image" src={mastercard} alt="Master Card"/>
+        
     </div>
+    <p class="p-footer">Copyright pagina creada por WEBLAND</p>
+    
 </footer>

@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets'
+import fila from '../images/fila.jpg'
+import "../styles/styleCard.css"
+---
+
+
+<div class="card-container">
+    <card class="card__content">
+        <div class="card__front">
+            <Image class="image__card" src={fila} alt="" />
+            <h1 class="card__title">Fila Bota</h1>
+            <h3 class="card__subtitle">$500</h3>
+        </div>
+        <div class="card__back">
+            <h2 class="card-back__style">FILA BOTA</h2>
+            <h4 class="card-black__talla">Tallas 21-25</h4>
+            <p class="card-black__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, laborum.</p>
+        </div>
+    </card>
+</div>

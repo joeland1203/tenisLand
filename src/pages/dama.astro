@@ -1,6 +1,5 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import PrincipalLayout from "../layouts/principalLayout.astro";
 import "../styles/global.css";
 import { Image } from "astro:assets";
 import whatsapp from "../images/logo-whatsapp.png";
@@ -34,7 +33,7 @@ import filaracer from "../images/dama/filaracer.jpg";
 		<title>Dama</title>
 	</head>
 	<body>
-		<Header />
+		<PrincipalLayout>
 		<h1>Calzado para Dama</h1>
 		<h3>Algunos modelos los tenemos para entrega inmediata y otros sobre pedido</h3>
 		<div class="todos-productos">
@@ -185,7 +184,7 @@ import filaracer from "../images/dama/filaracer.jpg";
 			
 		</div>
 		
-		<Footer />
+	</PrincipalLayout>
 		<script>
 			import "../scripts/menu.js";
 		</script>
