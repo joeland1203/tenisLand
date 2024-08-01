@@ -51,9 +51,9 @@ box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.6);
 }
 
 .subtitle-index {
-    font-size: .8rem;
+    font-size: .4rem;
     text-align: center;
-    padding: 1rem;
+    padding: .2rem;
 }
 
 .escolar-area {
@@ -68,7 +68,16 @@ margin-top: 70px;
 padding-top: 20px;
 }
 
-
+@media screen and (min-width: 520px) {
+    .video {
+        flex-direction: row;
+      }
+      .subtitle-index {
+        font-size: .8rem;
+        padding: .5rem;
+      }
+   }
+ 
 
 @media (min-width: 768px) {
   .video {
@@ -76,5 +85,6 @@ padding-top: 20px;
   }
   .subtitle-index {
     font-size: 1.2rem;
+    padding: .5rem;
   }
   }
